@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace ConundrumCodex\BindingEngine\Parser\Ast\Interfaces;
 
-interface SourceSpanInterface
+interface SourceSpanInterface extends \Stringable
 {
     public function start(): int;
 

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes;
 
 use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
+use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\BindingPayloadInterface;
 use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
 
 final readonly class BindingNode implements AstNodeInterface
