@@ -1,0 +1,58 @@
+{
+    "name": "conundrum-codex/binding-engine-parser",
+    "description": "PHP parser for the BindingEngine markdown dialect that extracts semantic bindings into an abstract syntax tree.",
+    "type": "library",
+    "license": "AGPL-3.0-or-later",
+    "version": "0.0.1",
+    "require": {
+        "php": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ConundrumCodex\\BindingEngine\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sam Baynham",
+            "email": "sam.baynham@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^4.4",
+        "symfony/var-dumper": "^8.0",
+        "mockery/mockery": "^1.6",
+        "phpstan/phpstan": "^2.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "pest",
+        "stan": "php -d memory_limit=1G vendor/bin/phpstan analyse"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "keywords": [
+        "php",
+        "parser",
+        "markdown",
+        "ast",
+        "dsl",
+        "binding",
+        "semantic"
+    ],
+    "homepage": "https://github.com/Conundrum-Codex/binding-engine-parser",
+    "support": {
+        "issues": "https://github.com/Conundrum-Codex/binding-engine-parser/issues",
+        "source": "https://github.com/Conundrum-Codex/binding-engine-parser"
+    }
+}
