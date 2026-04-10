@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ConundrumCodex\\BindingEngine\\": "src/"
+            "ConundrumCodex\\BindingEngine\\Parser\\": "src/"
         }
     },
     "autoload-dev": {

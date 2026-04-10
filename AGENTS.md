@@ -2,14 +2,21 @@
 
 
 ## Interpretation
-
 The keywords **MUST**, **MUST NOT**, **REQUIRED**, **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, **RECOMMENDED**, **NOT RECOMMENDED**, **MAY**, and **OPTIONAL** in this document are to be interpreted as described in RFC 2119.
 
 ---
 
 ## About this file
-This file defines the general project rules. The documents under ./codingstandards/ are topic-specific normative standards and MUST be followed.
-If a rule in ./codingstandards/ conflicts with this file, the more specific rule in ./codingstandards/ takes precedence for that topic.
+The README.md acts as a language contract for this project.
+This file defines the general project rules.
+The documents under `./codingstandards/` are topic-specific normative standards and MUST be followed.
+If a rule in `./codingstandards/` conflicts with this file, the more specific rule in `./codingstandards/` takes precedence for that topic.
+
+In the event of a conflict, the order of precedence, from most authoritative to least-authoritative is:
+1. README.md
+2. A specific file under `./codingstandards/`
+3. This file
+4. More general implied standards such as PSR-12
 
 ## 1. Purpose
 
