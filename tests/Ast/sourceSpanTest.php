@@ -13,9 +13,9 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
         $end = 300;
         $span = new SourceSpan($start, $end);
         \expect($span)->toBeInstanceOf(SourceSpan::class);
-        \expect($span->start())->toBe($start);
-        \expect($span->end())->toBe($end);
-        \expect($span->length())->toBe(299);
+        \expect($span->getStart())->toBe($start);
+        \expect($span->getEnd())->toBe($end);
+        \expect($span->getLength())->toBe(299);
         \expect($span->contains(150))->toBeTrue();
         \expect($span->contains(500))->toBeFalse();
         \expect((string) $span)->toBe('[1, 300)');
@@ -99,7 +99,7 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
     function () {
         $span = new SourceSpan(5, 5);
 
-        \expect($span->length())->toBe(0)
+        \expect($span->getLength())->toBe(0)
             ->and($span->contains(5))->toBeFalse()
             ->and((string) $span)->toBe('[5, 5)');
     }

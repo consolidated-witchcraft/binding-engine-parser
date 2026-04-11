@@ -6,11 +6,11 @@ namespace ConundrumCodex\BindingEngine\Parser\Ast\Interfaces;
 
 interface SourceSpanInterface extends \Stringable
 {
-    public function start(): int;
+    public function getStart(): int;
 
-    public function end(): int;
+    public function getEnd(): int;
 
-    public function length(): int;
+    public function getLength(): int;
 
     public function contains(int $offset): bool;
 

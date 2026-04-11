@@ -9,14 +9,14 @@ use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
 
 interface AstNodeInterface
 {
-    public function type(): AstNodeTypeEnum;
+    public function getType(): AstNodeTypeEnum;
 
-    public function span(): SourceSpanInterface;
+    public function getSpan(): SourceSpanInterface;
 
     /**
      * @return list<AstNodeInterface>
      */
-    public function children(): array;
+    public function getChildren(): array;
 
     public function hasChildren(): bool;
 }

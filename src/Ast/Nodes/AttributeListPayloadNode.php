@@ -7,7 +7,6 @@ namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes;
 use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeListPayloadNodeException;
 use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\BindingPayloadInterface;
 use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
-//TODO - THIS NEEDS A TEST!
 readonly class AttributeListPayloadNode implements BindingPayloadInterface
 {
     /**

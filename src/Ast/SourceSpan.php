@@ -27,17 +27,17 @@ final readonly class SourceSpan implements SourceSpanInterface
         }
     }
 
-    public function start(): int
+    public function getStart(): int
     {
         return $this->start;
     }
 
-    public function end(): int
+    public function getEnd(): int
     {
         return $this->end;
     }
 
-    public function length(): int
+    public function getLength(): int
     {
         return $this->end - $this->start;
     }
@@ -49,29 +49,29 @@ final readonly class SourceSpan implements SourceSpanInterface
 
     public function containsSpan(SourceSpanInterface $comparisonSpan): bool
     {
-        return $comparisonSpan->start() >= $this->start
-            && $comparisonSpan->end() <= $this->end;
+        return $comparisonSpan->getStart() >= $this->start
+            && $comparisonSpan->getEnd() <= $this->end;
     }
 
     public function overlapsSpan(SourceSpanInterface $comparisonSpan): bool
     {
-        if ($this->length() === 0 || $comparisonSpan->length() === 0) {
+        if ($this->getLength() === 0 || $comparisonSpan->getLength() === 0) {
             return false;
         }
 
-        return $this->start < $comparisonSpan->end()
-            && $this->end > $comparisonSpan->start();
+        return $this->start < $comparisonSpan->getEnd()
+            && $this->end > $comparisonSpan->getStart();
     }
 
     public function equalsSpan(SourceSpanInterface $comparisonSpan): bool
     {
-        return $this->start === $comparisonSpan->start()
-            && $this->end === $comparisonSpan->end();
+        return $this->start === $comparisonSpan->getStart()
+            && $this->end === $comparisonSpan->getEnd();
     }
 
     public function extract(string $source): string
     {
-        return substr($source, $this->start, $this->length());
+        return substr($source, $this->start, $this->getLength());
     }
 
     public function __toString(): string

@@ -9,7 +9,7 @@ use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\DocumentNodeInterfa
 
 interface AstInterface
 {
-    public function root(): DocumentNodeInterface;
+    public function getRoot(): DocumentNodeInterface;
 
     /**
      * @return iterable<AstNodeInterface>

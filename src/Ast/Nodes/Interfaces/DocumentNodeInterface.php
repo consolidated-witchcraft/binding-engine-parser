@@ -9,5 +9,5 @@ interface DocumentNodeInterface extends AstNodeInterface
     /**
      * @return list<AstNodeInterface>
      */
-    public function children(): array;
+    public function getChildren(): array;
 }
