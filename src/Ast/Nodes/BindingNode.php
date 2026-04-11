@@ -9,10 +9,10 @@ use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
 use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidBindingNodeException;
 use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
 use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\BindingPayloadInterface;
+use ConundrumCodex\BindingEngine\Parser\Language\IdentifierPatterns;
 
 readonly class BindingNode implements AstNodeInterface
 {
-    private const string VALID_BINDING_TYPE_PATTERN = '/^[a-z](?:[a-z0-9]|-(?=[a-z0-9])){2,63}$/';
 
     /**
      * @throws InvalidBindingNodeException
@@ -80,7 +80,7 @@ readonly class BindingNode implements AstNodeInterface
      */
     private function guard(): void
     {
-        if (!preg_match(self::VALID_BINDING_TYPE_PATTERN, $this->bindingType)) {
+        if (!preg_match(IdentifierPatterns::BINDING_TYPE, $this->bindingType)) {
             throw new InvalidBindingNodeException(
                 message: sprintf(
                     'Binding type "%s" is invalid.',

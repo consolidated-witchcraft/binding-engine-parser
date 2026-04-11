@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace ConundrumCodex\BindingEngine\Parser\Diagnostics;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
+use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
 use ConundrumCodex\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
 use ConundrumCodex\BindingEngine\Parser\Diagnostics\Exceptions\DiagnosticConstructionException;
 use ConundrumCodex\BindingEngine\Parser\Diagnostics\Interfaces\DiagnosticInterface;
+use ConundrumCodex\BindingEngine\Parser\Exceptions\Interfaces\ParserExceptionInterface;
 
 readonly class Diagnostic implements DiagnosticInterface
 {
@@ -18,7 +19,7 @@ readonly class Diagnostic implements DiagnosticInterface
         private string $message,
         private string $code,
         private DiagnosticSeverityEnum $severity,
-        private ?SourceSpan $sourceSpan = null,
+        private ?SourceSpanInterface $sourceSpan = null,
     ) {
         $this->guard();
     }
@@ -38,7 +39,7 @@ readonly class Diagnostic implements DiagnosticInterface
         return $this->severity;
     }
 
-    public function getSourceSpan(): ?SourceSpan
+    public function getSourceSpan(): ?SourceSpanInterface
     {
         return $this->sourceSpan;
     }
@@ -56,4 +57,18 @@ readonly class Diagnostic implements DiagnosticInterface
             throw new DiagnosticConstructionException('Diagnostic code must not be empty.');
         }
     }
+
+    /**
+     * @throws DiagnosticConstructionException
+     */
+    public static function makeFromParserException(ParserExceptionInterface $exception): Diagnostic
+    {
+        return new Diagnostic(
+            message: $exception->getMessage(),
+            code: $exception->getDiagnosticCode(),
+            severity: $exception->getDiagnosticSeverity(),
+            sourceSpan: $exception->getSourceSpan(),
+        );
+    }
+
 }
