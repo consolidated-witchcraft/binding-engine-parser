@@ -3,7 +3,6 @@
     "description": "PHP parser for the BindingEngine markdown dialect that extracts semantic bindings into an abstract syntax tree.",
     "type": "library",
     "license": "AGPL-3.0-or-later",
-    "version": "0.0.1",
     "require": {
         "php": "^8.3"
     },
