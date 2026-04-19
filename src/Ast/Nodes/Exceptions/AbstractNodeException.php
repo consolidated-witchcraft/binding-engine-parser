@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions;
+
 use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
 
 abstract class AbstractNodeException extends \Exception
@@ -16,7 +17,8 @@ abstract class AbstractNodeException extends \Exception
         parent::__construct(sprintf("%s, Span: %s", $message, $sourceSpan), $code, $previous);
     }
 
-    public function getSourceSpan(): SourceSpanInterface {
+    public function getSourceSpan(): SourceSpanInterface
+    {
         return $this->sourceSpan;
     }
 }

@@ -1,6 +1,5 @@
 <?php
 
-
 use ConundrumCodex\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
 use ConundrumCodex\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
 use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidTextNodeException;
@@ -35,10 +34,10 @@ it(
     'rejects empty text',
     function () {
         expect(
-        /**
-         * @throws SourceSpanConstructionException
-         * @throws InvalidTextNodeException
-         */
+            /**
+             * @throws SourceSpanConstructionException
+             * @throws InvalidTextNodeException
+             */
             function () {
                 new TextNode(
                     span: new SourceSpan(0, 0),

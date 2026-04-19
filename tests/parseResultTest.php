@@ -1,6 +1,5 @@
 <?php
 
-
 declare(strict_types=1);
 
 use ConundrumCodex\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;

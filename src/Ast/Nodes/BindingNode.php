@@ -13,7 +13,6 @@ use ConundrumCodex\BindingEngine\Parser\Language\IdentifierPatterns;
 
 readonly class BindingNode implements AstNodeInterface
 {
-
     /**
      * @throws InvalidBindingNodeException
      */

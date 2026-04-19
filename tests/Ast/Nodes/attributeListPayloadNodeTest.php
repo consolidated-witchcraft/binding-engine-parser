@@ -87,7 +87,8 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
                 attributes: $attributes,
                 raw: $invalidRaw,
             );
-        })->toThrow(InvalidAttributeListPayloadNodeException::class);
+        }
+    )->toThrow(InvalidAttributeListPayloadNodeException::class);
 })->with(function (): iterable {
     yield 'empty string' => '';
     yield 'oops, all whitespace' => '     ';

@@ -113,11 +113,11 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
     'rejects invalid labels',
     function (string $invalidLabel) {
         \expect(
-        /**
-         * @throws InvalidBindingNodeException
-         * @throws InvalidShorthandPayloadNodeException
-         * @throws SourceSpanConstructionException
-         */
+            /**
+             * @throws InvalidBindingNodeException
+             * @throws InvalidShorthandPayloadNodeException
+             * @throws SourceSpanConstructionException
+             */
             function () use ($invalidLabel) {
                 $sourceSpan = new SourceSpan(0, 50);
 
@@ -140,11 +140,11 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
     'rejects invalid raw values',
     function (string $invalidRawValue) {
         \expect(
-        /**
-         * @throws InvalidBindingNodeException
-         * @throws InvalidShorthandPayloadNodeException
-         * @throws SourceSpanConstructionException
-         */
+            /**
+             * @throws InvalidBindingNodeException
+             * @throws InvalidShorthandPayloadNodeException
+             * @throws SourceSpanConstructionException
+             */
             function () use ($invalidRawValue) {
                 $sourceSpan = new SourceSpan(0, 50);
 

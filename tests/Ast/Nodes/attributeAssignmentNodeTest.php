@@ -34,7 +34,7 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
         \expect($attributeAssignmentNode->getRaw())->toBe($raw);
     }
 )->with(
-    function(): iterable {
+    function (): iterable {
         yield 'minimum letters only' => 'abc';
         yield 'minimum with digit' => 'a1b';
         yield 'minimum with underscore' => 'a_b';
@@ -50,11 +50,11 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
     'rejects invalid identifiers',
     function (string $invalidIdentifier) {
         \expect(
-        /**
-         * @throws InvalidAttributeAssignmentNodeException
-         * @throws SourceSpanConstructionException
-         */
-        function () use ($invalidIdentifier) {
+            /**
+             * @throws InvalidAttributeAssignmentNodeException
+             * @throws SourceSpanConstructionException
+             */
+            function () use ($invalidIdentifier) {
                 new AttributeAssignmentNode(
                     span: new SourceSpan(0, 10),
                     identifier: $invalidIdentifier,
@@ -106,21 +106,20 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
         )->toThrow(InvalidAttributeAssignmentNodeException::class);
     }
 )->with(
-    function(): iterable {
+    function (): iterable {
         yield 'empty' => '';
         yield 'whitespace only' => '  ';
     }
 );
 
-
 \it(
     'rejects invalid raws',
     function (string $invalidRaw) {
         \expect(
-        /**
-         * @throws InvalidAttributeAssignmentNodeException
-         * @throws SourceSpanConstructionException
-         */
+            /**
+             * @throws InvalidAttributeAssignmentNodeException
+             * @throws SourceSpanConstructionException
+             */
             function () use ($invalidRaw) {
                 new AttributeAssignmentNode(
                     span: new SourceSpan(0, 10),
@@ -132,9 +131,8 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
         )->toThrow(InvalidAttributeAssignmentNodeException::class);
     }
 )->with(
-    function(): iterable {
+    function (): iterable {
         yield 'empty' => '';
         yield 'whitespace only' => '  ';
     }
 );
-

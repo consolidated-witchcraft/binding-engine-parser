@@ -111,6 +111,19 @@ Typical node types include:
 
 Downstream libraries may then consume this AST for validation, graph projection, or inference.
 
+## Development
+Code style is enforced with `php-cs-fixer`.
+
+Check formatting without changing files:
+```bash
+composer cs:check
+```
+
+Apply formatting:
+```bash
+composer cs:fix
+```
+
 ## Formal Grammar
 
 ```ebnf

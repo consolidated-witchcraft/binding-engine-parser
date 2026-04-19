@@ -15,7 +15,8 @@ use ConundrumCodex\BindingEngine\Parser\Diagnostics\Exceptions\DiagnosticConstru
              */
             function () use ($invalidString) {
                 new Diagnostic($invalidString, 'code', DiagnosticSeverityEnum::Error);
-        })->toThrow(DiagnosticConstructionException::class);
+            }
+        )->toThrow(DiagnosticConstructionException::class);
 
         \expect(
             /**
@@ -23,7 +24,8 @@ use ConundrumCodex\BindingEngine\Parser\Diagnostics\Exceptions\DiagnosticConstru
              */
             function () use ($invalidString) {
                 new Diagnostic('message', $invalidString, DiagnosticSeverityEnum::Error);
-        })->toThrow(DiagnosticConstructionException::class);
+            }
+        )->toThrow(DiagnosticConstructionException::class);
     }
 )->with(
     function (): iterable {

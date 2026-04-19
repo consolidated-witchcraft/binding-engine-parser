@@ -14,7 +14,6 @@ final class IdentifierPatterns
 
     public const string BINDING_INCIPIT_CHARACTER = '@';
 
-
     private function __construct()
     {
     }

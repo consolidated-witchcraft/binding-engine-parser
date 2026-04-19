@@ -26,7 +26,6 @@ use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
     }
 );
 
-
 \it(
     'rejects invalid values',
     /**

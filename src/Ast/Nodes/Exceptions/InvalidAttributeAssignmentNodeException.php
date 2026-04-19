@@ -6,5 +6,4 @@ namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions;
 
 class InvalidAttributeAssignmentNodeException extends AbstractNodeException
 {
-
 }

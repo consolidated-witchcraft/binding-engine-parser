@@ -6,7 +6,6 @@ namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes;
 
 use ConundrumCodex\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
 use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidDocumentNodeException;
 use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
 use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
 
