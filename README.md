@@ -116,13 +116,23 @@ Code style is enforced with `php-cs-fixer`.
 
 Check formatting without changing files:
 ```bash
-composer cs:check
+composer php-cs:check
 ```
 
 Apply formatting:
 ```bash
-composer cs:fix
+composer php-cs:fix
 ```
+
+Enable the repository-managed Git hooks:
+```bash
+git config core.hooksPath .githooks
+```
+
+The `pre-commit` hook runs:
+- `composer php-cs:check`
+- `composer stan`
+- `composer test`
 
 ## Formal Grammar
 
@@ -171,3 +181,19 @@ Character       ::= ? any Unicode character ? ;
 
 If a payload contains an unquoted colon (`:`), it is parsed as an `AttributeList`.  
 Otherwise, it is parsed as a `ShorthandValue`.
+
+## Development Hooks
+
+Install the repository pre-commit hook with:
+
+```bash
+composer hooks:install
+```
+
+This configures Git to use `.githooks/pre-commit`, which runs:
+
+- `composer php-cs:check`
+- `composer stan`
+- `composer test`
+
+The commit is rejected if any of those commands fail.
