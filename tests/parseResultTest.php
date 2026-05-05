@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\DocumentNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Diagnostic;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Exceptions\DiagnosticConstructionException;
-use ConundrumCodex\BindingEngine\Parser\ParseResult;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\DocumentNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\SourceSpan;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Diagnostic;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Exceptions\DiagnosticConstructionException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\ParseResult;
 
 it(
     'constructs correctly without diagnostics',

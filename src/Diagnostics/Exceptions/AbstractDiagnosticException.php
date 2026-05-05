@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Diagnostics\Exceptions;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Exceptions;
 
 abstract class AbstractDiagnosticException extends \Exception
 {

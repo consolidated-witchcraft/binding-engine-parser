@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Diagnostics;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Exceptions\DiagnosticConstructionException;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Interfaces\DiagnosticInterface;
-use ConundrumCodex\BindingEngine\Parser\Exceptions\Interfaces\ParserExceptionInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Exceptions\DiagnosticConstructionException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Interfaces\DiagnosticInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Exceptions\Interfaces\ParserExceptionInterface;
 
 readonly class Diagnostic implements DiagnosticInterface
 {

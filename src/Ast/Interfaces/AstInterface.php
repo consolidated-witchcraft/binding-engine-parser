@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Interfaces;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Interfaces;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\DocumentNodeInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces\DocumentNodeInterface;
 
 interface AstInterface
 {

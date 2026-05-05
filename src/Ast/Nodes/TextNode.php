@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
-use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidTextNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
-use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidTextNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\SourceSpan;
 
 readonly class TextNode implements AstNodeInterface
 {

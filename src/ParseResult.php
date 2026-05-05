@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\DocumentNode;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Interfaces\DiagnosticInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\DocumentNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Interfaces\DiagnosticInterface;
 
 readonly class ParseResult
 {

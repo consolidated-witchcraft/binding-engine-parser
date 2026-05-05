@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces;
 
 interface DocumentNodeInterface extends AstNodeInterface
 {

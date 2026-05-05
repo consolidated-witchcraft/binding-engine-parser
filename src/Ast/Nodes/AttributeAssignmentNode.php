@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeAssignmentNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeAssignmentNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\SourceSpan;
 
 readonly class AttributeAssignmentNode
 {

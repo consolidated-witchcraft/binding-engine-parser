@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeListPayloadNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\BindingPayloadInterface;
-use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeListPayloadNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces\BindingPayloadInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\SourceSpan;
 
 readonly class AttributeListPayloadNode implements BindingPayloadInterface
 {

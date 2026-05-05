@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Exceptions\Interfaces;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Exceptions\Interfaces;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
 
 interface ParserExceptionInterface extends \Throwable
 {

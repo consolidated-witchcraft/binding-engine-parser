@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\AttributeListPayloadNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\BindingNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\TextNode;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
-use ConundrumCodex\BindingEngine\Parser\Parser;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\AttributeListPayloadNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\BindingNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\ShorthandPayloadNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\TextNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Enums\DiagnosticSeverityEnum;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Parser;
 
 it(
     'parses quoted attribute values with spaces',
@@ -243,7 +244,7 @@ it(
 
         $payload = $children[0]->getPayload();
 
-        expect($payload)->toBeInstanceOf(\ConundrumCodex\BindingEngine\Parser\Ast\Nodes\ShorthandPayloadNode::class)
+        expect($payload)->toBeInstanceOf(ShorthandPayloadNode::class)
             ->and($payload->getSpan()->extract($source))->toBe('jane-austen');
     }
 );

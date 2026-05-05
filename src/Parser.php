@@ -2,28 +2,28 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\AttributeAssignmentNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\AttributeListPayloadNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\BindingNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\DocumentNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeAssignmentNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeListPayloadNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidBindingNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidShorthandPayloadNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidTextNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\BindingPayloadInterface;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\ShorthandPayloadNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\TextNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
-use ConundrumCodex\BindingEngine\Parser\Diagnostics\Diagnostic;
-use ConundrumCodex\BindingEngine\Parser\Exceptions\Interfaces\ParserExceptionInterface;
-use ConundrumCodex\BindingEngine\Parser\Exceptions\InvalidAttributeIdentifierParseException;
-use ConundrumCodex\BindingEngine\Parser\Exceptions\MalformedAttributeAssignmentException;
-use ConundrumCodex\BindingEngine\Parser\Language\IdentifierPatterns;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\AttributeAssignmentNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\AttributeListPayloadNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\BindingNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\DocumentNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeAssignmentNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeListPayloadNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidBindingNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidShorthandPayloadNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidTextNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces\BindingPayloadInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\ShorthandPayloadNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\TextNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\SourceSpan;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Diagnostic;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Exceptions\Interfaces\ParserExceptionInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Exceptions\InvalidAttributeIdentifierParseException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Exceptions\MalformedAttributeAssignmentException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Language\IdentifierPatterns;
 
 final class Parser
 {

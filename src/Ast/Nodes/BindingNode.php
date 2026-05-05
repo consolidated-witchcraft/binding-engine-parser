@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
-use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidBindingNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces\BindingPayloadInterface;
-use ConundrumCodex\BindingEngine\Parser\Language\IdentifierPatterns;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidBindingNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces\AstNodeInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces\BindingPayloadInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Language\IdentifierPatterns;
 
 readonly class BindingNode implements AstNodeInterface
 {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\AttributeAssignmentNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\AttributeListPayloadNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeAssignmentNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeListPayloadNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\AttributeAssignmentNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\AttributeListPayloadNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeAssignmentNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidAttributeListPayloadNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\SourceSpan;
 
 \it(
     'constructs correctly (happy path)',

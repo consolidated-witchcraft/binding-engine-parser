@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Interfaces;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Interfaces;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
-use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Interfaces\SourceSpanInterface;
 
 interface AstNodeInterface
 {

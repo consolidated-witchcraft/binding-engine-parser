@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Interfaces;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Interfaces;
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Interfaces\AstInterface;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Interfaces\AstInterface;
 
 interface ParserInterface
 {

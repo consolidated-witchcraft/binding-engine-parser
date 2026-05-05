@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Exceptions;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Exceptions;
 
 abstract class AbstractAstException extends \Exception
 {

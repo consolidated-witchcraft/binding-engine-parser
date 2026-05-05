@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Interfaces;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Interfaces;
 
 interface SourceSpanInterface extends \Stringable
 {

@@ -1,9 +1,9 @@
 <?php
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidShorthandPayloadNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\ShorthandPayloadNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidShorthandPayloadNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\ShorthandPayloadNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\SourceSpan;
 
 \it(
     'constructs correctly',

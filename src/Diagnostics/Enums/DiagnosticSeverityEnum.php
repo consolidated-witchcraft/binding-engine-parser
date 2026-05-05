@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Diagnostics\Enums;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Diagnostics\Enums;
 
 enum DiagnosticSeverityEnum: string
 {

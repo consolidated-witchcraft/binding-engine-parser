@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Ast\Enums;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Enums;
 
 enum AstNodeTypeEnum: string
 {

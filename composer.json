@@ -1,5 +1,5 @@
 {
-    "name": "conundrum-codex/binding-engine-parser",
+    "name": "consolidated-witchcraft/binding-engine-parser",
     "description": "PHP parser for the BindingEngine markdown dialect that extracts semantic bindings into an abstract syntax tree.",
     "type": "library",
     "license": "AGPL-3.0-or-later",
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ConundrumCodex\\BindingEngine\\Parser\\": "src/"
+            "ConsolidatedWitchcraft\\BindingEngine\\Parser\\": "src/"
         }
     },
     "autoload-dev": {

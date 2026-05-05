@@ -1,11 +1,11 @@
 <?php
 
-use ConundrumCodex\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
-use ConundrumCodex\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\DocumentNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidTextNodeException;
-use ConundrumCodex\BindingEngine\Parser\Ast\Nodes\TextNode;
-use ConundrumCodex\BindingEngine\Parser\Ast\SourceSpan;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Enums\AstNodeTypeEnum;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Exceptions\SourceSpanConstructionException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\DocumentNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\Exceptions\InvalidTextNodeException;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\Nodes\TextNode;
+use ConsolidatedWitchcraft\BindingEngine\Parser\Ast\SourceSpan;
 
 it(
     'constructs correctly without children',

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ConundrumCodex\BindingEngine\Parser\Language;
+namespace ConsolidatedWitchcraft\BindingEngine\Parser\Language;
 
 final class IdentifierPatterns
 {
